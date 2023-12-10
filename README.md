@@ -146,3 +146,69 @@ brew install stats
 # Dev tools
 brew install devtoys
 ```
+
+## VsCode extensions
+
+### General
+
+- Better comments
+- Bracket pair colorizer
+- Code spell checker
+- Error lens
+- Edit csv
+- DotENV
+- Image preview
+- Image Viewer
+- Live Share
+- Live Server
+- Material Icon Theme
+- PDF Preview
+- Prettier
+- Reload
+- Todo Tree
+
+### GitHub
+
+- GitHub Actions
+- GitHub Copilot
+- GitHub Copilot Chat
+- Git History
+  
+### Markdown
+
+- Markdown All in One
+- Markdown Preview Enhanced
+- Markdownlint
+- Markdown PDF
+- Markdown Preview Mermaid Support
+- Mermaid Markdown Syntax Highlighting
+- MyST-Markdown
+
+### API
+
+- Thunder Client
+
+### .NET
+
+- C#
+- C# Extensions
+- C# Dev Kit
+- C# Snippets
+- .NET Install Tool
+- Learn Authoring Pack
+
+### Python
+
+- Python
+- Black Formatter
+- isort
+- Jupyter
+- Pylance
+- Python Environment Manager
+- Python Extension Pack
+- Python Indent
+
+### Dart/Flutter
+
+- Flutter
+- Dart Data Class Generator
