@@ -8,12 +8,6 @@ Homebrew is a package manager for macOS. It allows you to install and manage sof
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-Then you can install your first package using brew:
-
-```bash
-brew install alfred
-```
-
 ## Oh my zsh
 
 By default, the pre-configured shell on MacOS is zsh. Oh My Zsh is an open source, community-driven framework for managing your zsh configuration.
