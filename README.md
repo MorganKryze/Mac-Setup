@@ -137,6 +137,8 @@ brew install inkscape
 ## Utilities
 
 ```bash
+# Clean uninstalls
+brew install appcleaner
 # Tiling manual window manager (goes with yabai)
 brew install rectangle
 # Control other displays
