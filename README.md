@@ -89,6 +89,8 @@ brew install arc
 brew install notion
 # Mails
 brew install thunderbird
+# Pomodoro
+brew install pomatez
 ```
 
 ## Dev apps
