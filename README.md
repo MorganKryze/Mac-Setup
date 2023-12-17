@@ -102,6 +102,8 @@ brew install visual-studio-code
 brew install utm
 # Latest Windows images
 brew install crystalfetch
+# For all kinds of containers
+brew install lazydocker
 ```
 
 ## Security
