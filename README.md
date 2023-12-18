@@ -74,6 +74,10 @@ brew install node
 # For clean python env
 brew install miniconda
 conda init "$(basename "${SHELL}")"
+
+# For better use of GitHub (developer only)
+brew install gh
+gh auth login
 ```
 
 ## Productivity
