@@ -1,4 +1,6 @@
-# Mac_Setup
+# Mac-Setup
+
+> This is a list of all the apps and tools that i use on my Mac. I hope it will help you to find some useful tools for your own setup.
 
 ## Homebrew
 
