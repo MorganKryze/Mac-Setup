@@ -110,6 +110,8 @@ brew install utm
 brew install crystalfetch
 # For all kinds of containers
 brew install lazydocker
+# To manage your git workspace
+brew install lazygit
 ```
 
 ## Security
