@@ -149,8 +149,10 @@ brew install rectangle
 brew install monitorcontrol
 # Computers stats displays on menu bar
 brew install stats
-# Dev tools
+# General dev tools
 brew install devtoys
+# Easy customizable shortcuts
+brew install only-switch
 ```
 
 ## VsCode extensions
