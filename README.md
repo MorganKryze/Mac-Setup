@@ -2,7 +2,7 @@
 
 > A list of useful tools and configurations for a Mac setup (more features for developers).
 
-![banner](./src/assets/img/banner.jpg)
+![banner](./src/assets/img/banner.png)
 
 ## Homebrew
 
@@ -98,6 +98,14 @@ Canva is a graphic design platform that allows you to create and modify presenta
 brew install canva
 ```
 
+#### Bonus
+
+Capture screenshot to jpg format instead of png. Run this command:
+
+```bash
+defaults write com.apple.screencapture type jpg
+```
+
 ### Security
 
 Bitwarden is a password manager that allows you to store and manage your passwords securely. (Free but has [paid plans](https://bitwarden.com/pricing/)| [Open source](https://github.com/bitwarden))
@@ -172,10 +180,10 @@ OnlySwitch is a All-in-One menu bar app, hide MacBook Pro's notch, dark mode, Ai
 brew install only-switch
 ```
 
+Rectangle is a window manager that allows you to manage your windows on your Desktop with your keyboard. (Free | [Open source](https://github.com/rxhanson/Rectangle))
+
 > [!WARNING]
 > If you consider using Yabai (tiling manager availabe in the developper tools section), you MUST NOT use Rectangle. It will conflict with Yabai and may cause some issues.
-
-Rectangle is a window manager that allows you to manage your windows on your Desktop with your keyboard. (Free | [Open source](https://github.com/rxhanson/Rectangle))
 
 ```bash
 brew install rectangle
@@ -183,7 +191,7 @@ brew install rectangle
 
 ## Developper tools
 
-> [!NOTE]
+> [!IMPORTANT]
 > This part is only for developpers, do not mind otherwise.
 
 The `.zshrc` file is located in your home directory(`~`) and is used to configure your shell (terminal) and its tools and shortcuts. It is a hidden file, but you can view it by typing `ls -a` in your terminal.
