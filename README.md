@@ -194,7 +194,11 @@ brew install rectangle
 > [!IMPORTANT]
 > This part is only for developpers, do not mind otherwise.
 
-The `.zshrc` file is located in your home directory(`~`) and is used to configure your shell (terminal) and its tools and shortcuts. It is a hidden file, but you can view it by typing `ls -a` in your terminal.
+### Terminal configuration
+
+We see how to use and setup the `.zshrc` and `.zshenv` files.
+
+Both files are located in your home directory(`~`) and are used to configure your shell (terminal) and its tools and shortcuts. It is a hidden file, but you can view it by typing `ls -a` in your terminal.
 
 Here is an example of a `.zshrc` file:
 
@@ -233,12 +237,29 @@ alias reopn="code -r ."
 source ~/Yabai-Setup/src/yabai-setup.sh
 ```
 
+Here is an example of a `.zshenv` file:
+
+```bash
+# This file contains the environment variables for the Zsh shell.
+export ZSH="$HOME/.oh-my-zsh"
+
+# Flutter tools
+export PATH="$PATH:/Users/your-user/Documents/.../SDK/flutter/bin"
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+# .NET tools
+export PATH="$PATH:/Users/your-user/.dotnet/tools"
+
+# Keys
+export OPENAI_API_KEY=your_openai_key
+```
+
 > [!CAUTION]
-> Do not copy and paste this file directly into your terminal. Go throuh the process below to install the tools and then add the aliases and plugins to your `.zshrc` file when asked to.
+> Do not copy and paste these file directly into your terminal. Go throuh the process below to install the tools and then add the aliases and plugins to your `.zshrc` file when asked to. The `.zshenv` file is only an example, do not copy and paste it without updating the paths and keys you want to use.
 
 ### Oh My Zsh
 
-By default, the pre-configured shell on MacOS is zsh. Oh My Zsh is an open source, community-driven framework for managing your zsh configuration.
+By default, the pre-configured shell on MacOS is zsh. Oh My Zsh is an open source, community-driven framework for managing your zsh configuration. It comes bundled with a ton of helpful functions, helpers, plugins, themes, and a few things that make you shout... "Oh My Zsh!". Install it with the following command:
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -246,15 +267,18 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 For the Theme part, I use bira, but you have a lot of choice. You can find them [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes).
 
-For the plugins, I use git, [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh) (gives you history of your commands) and [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh) (highlights in green if your command is valid). Once installed, you have to add them in the plugins section of your zshrc file.
+For the plugins, I use git, [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh) (gives you history of your commands) and [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh) (highlights in green if your command is valid). Once installed, you have to add them in the plugins section of your zshrc file (like in the example above).
 
 ### neofetch
 
-neoFetch is a command-line system information tool written in bash 3.2+. It displays information about your system next to an image, generally your OS logo, or any ASCII file of your choice.
+neoFetch is a command-line system information tool. It displays information about your system next to an image, generally your OS logo, or any ASCII file of your choice. This is only cosmetic and informative.
 
 ```bash
 brew install neofetch
 ```
+
+> [!TIP]
+> You will need to add `neofetch` to your `.zshrc` file to display it at the start of each terminal session.
 
 ### lsd
 
@@ -264,22 +288,14 @@ lsd is a modern ls command with a lot of options and visuals.
 brew install lsd
 ```
 
-### Complementary tools
+> [!TIP]
+> You may use lsd with all of the built-in flags or define your own aliases in your `.zshrc` file to make your life easier.
 
 ### yabai
 
-yabai is a tiling window manager for macOS. It let you control your windows with your keyboard and gain a lot of time. To download and use it, I made this [repository](https://github.com/MorganKryze/Yabai-Setup).
+Yabai is a tiling window manager for macOS. It let you control your windows with your keyboard and gain a lot of time. To download and use it, I made this [repository](https://github.com/MorganKryze/Yabai-Setup).
 
-> [!NOTE]
-> Now that you have installed all the tools, you can add the aliases and plugins to your file. You can find the file in your home directory(`~`).
-
-### Easy-Git
-
-### Easy-Env
-
-## Basics
-
-We will use brew for all the installations. Here are the basics tools that i use:
+### Git and versionning
 
 Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
@@ -287,33 +303,78 @@ Git is a free and open source distributed version control system designed to han
 brew install git
 ```
 
+To visualize a control panel of your git workspace, you can use lazygit.
+
+```bash
+brew install lazygit
+```
+
+If you are using GitHub, you may want to use the GitHub CLI to manage your repositories and issues.
+
+```bash
+brew install gh
+```
+
+Then you may authenticate yourself with the following command:
+
+```bash
+gh auth login
+```
+
+> [!TIP]
+> To make your git workspace easier to manage, I made this [repository](https://github.com/MorganKryze/Easy-Git).
+
+### Environment managment
+
 Miniconda is a free minimal installer for conda. It is a small, bootstrap version of Anaconda that includes only conda, Python, the packages they depend on, and a small number of other useful packages, including pip, zlib and a few others. You may use it to create development environments for many language including Python, R, Ruby, Lua, Scala, Java, JavaScript, C/ C++, C#...
 
 ```bash
-# For clean python env
 brew install miniconda
+```
+
+Then init conda with the following command:
+
+```bash
 conda init "$(basename "${SHELL}")"
 ```
 
+> [!TIP]
+> To make your developpment environment easier to manage, I made this [repository](https://github.com/MorganKryze/Easy-Env).
+
+### Containers
+
+Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.
+
 ```bash
-# For better use of GitHub (developer only)
-brew install gh
-gh auth login
+brew install docker
+```
+
+To manage and visualize your containers, you can use lazydocker (same use as `lazygit`).
+
+```bash
+lazydocker
 ```
 
 ## Dev apps
 
+Visual Studio Code is a source-code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
 ```bash
-# Universal IDE
 brew install visual-studio-code
+```
+
+UTM is a virtual machine app that allows you to run any kind of VMs on your Mac. It is a great tool to test your apps on different OS or to use Windows on your Mac.
+
+```bash
 # For all kinds of VMs
 brew install utm
+```
+
+UTM goes along with CrystalFetch, a tool that allows you to download the latest Windows images for UTM.
+
+```bash
 # Latest Windows images
 brew install crystalfetch
-# For all kinds of containers
-brew install lazydocker
-# To manage your git workspace
-brew install lazygit
 ```
 
 ## VsCode extensions
