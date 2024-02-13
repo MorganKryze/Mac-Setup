@@ -45,7 +45,7 @@ Notion is a note-taking app that allows you to take notes, create to-do lists, a
 brew install notion
 ```
 
-Thunderbird is an email client that allows you to manage your emails. (Free but has paid [extension for microsoft 365 emails](https://addons.thunderbird.net/en-US/thunderbird/addon/owl-for-exchange/) | [Open source](https://www.thunderbird.net/))
+Thunderbird is an email client that allows you to manage your emails. (Free but has [paid extension for microsoft 365 emails](https://addons.thunderbird.net/en-US/thunderbird/addon/owl-for-exchange/) | [Open source](https://www.thunderbird.net/))
 
 ```bash
 brew install thunderbird
