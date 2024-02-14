@@ -66,6 +66,12 @@ brew install dropzone
 > [!NOTE]
 > For Dropzone, the installation gives you 14 days of free trial for the pro version. After that, just keep the free version or buy the pro version.
 
+CheatSheet is a tool that allows you to display all the shortcuts of the app available. (Free | [Proprietary](https://www.mediaatelier.com/CheatSheet/))
+
+```bash
+brew install cheatsheet
+```
+
 ### Photo & Video
 
 ImageOptim is a tool that allows you to compress images and remove metadata. (Free | [Open source](https://github.com/ImageOptim/ImageOptim))
