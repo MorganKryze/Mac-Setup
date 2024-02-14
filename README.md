@@ -25,7 +25,7 @@ If you just want to install everything at once, and then come back to the list t
 zsh src/install.sh
 ```
 
-> [!CAUTION]
+> [!WARNING]
 > This script does not include developper tools. You need to install them manually.
 
 ## Classic tools
