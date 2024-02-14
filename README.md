@@ -17,6 +17,17 @@ Homebrew is a package manager for macOS. It allows you to install and manage sof
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+## All in one
+
+If you just want to install everything at once, and then come back to the list to explore the tools and their functionality, you can use the following command:
+
+```bash
+zsh src/install.sh
+```
+
+> [!CAUTION]
+> This script does not include all developper tools. You need to install some manually.
+
 ## Classic tools
 
 ### Productivity
@@ -161,21 +172,18 @@ brew install appcleaner
 MonitorControl is a tool that allows you to control the brightness and volume of your external monitors. (Free | [Open source](https://github.com/MonitorControl/MonitorControl))
 
 ```bash
-# Control other displays
 brew install monitorcontrol
 ```
 
 Stats is a tool that allows you to display your computer stats on the menu bar. (Free | [Open source](https://github.com/exelban/stats))
 
 ```bash
-# Computers stats displays on menu bar
 brew install stats
 ```
 
 Though DevToys is a wonderful tool for programmers, it has several features that can be useful for everyone. It is a collection of tools that can be used to improve your productivity. (Free | [Open source](https://github.com/veler/DevToys))
 
 ```bash
-# General dev tools
 brew install devtoys
 ```
 
@@ -332,6 +340,9 @@ gh auth login
 
 ### Environment managment
 
+> [!TIP]
+> To make your developpment environment easier to manage, I made this [repository](https://github.com/MorganKryze/Easy-Env).
+
 Miniconda is a free minimal installer for conda. It is a small, bootstrap version of Anaconda that includes only conda, Python, the packages they depend on, and a small number of other useful packages, including pip, zlib and a few others. You may use it to create development environments for many language including Python, R, Ruby, Lua, Scala, Java, JavaScript, C/ C++, C#...
 
 ```bash
@@ -344,9 +355,6 @@ Then init conda with the following command:
 conda init "$(basename "${SHELL}")"
 ```
 
-> [!TIP]
-> To make your developpment environment easier to manage, I made this [repository](https://github.com/MorganKryze/Easy-Env).
-
 ### Containers
 
 Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.
@@ -358,7 +366,7 @@ brew install docker
 To manage and visualize your containers, you can use lazydocker (same use as `lazygit`).
 
 ```bash
-lazydocker
+brew lazydocker
 ```
 
 ## Dev apps
