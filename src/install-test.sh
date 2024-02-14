@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-read -r is_developer"?Do you want to install developer tools? (y/n): "
+read -r is_developer"?Do you want to install developer tools? (y/n): " </dev/tty
 
 echo "$is_developer"
 
