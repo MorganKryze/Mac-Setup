@@ -26,7 +26,7 @@ zsh src/install.sh
 ```
 
 > [!CAUTION]
-> This script does not include all developper tools. You need to install some manually.
+> This script does not include developper tools. You need to install them manually.
 
 ## Classic tools
 
