@@ -22,6 +22,12 @@ Homebrew is a package manager for macOS. It allows you to install and manage sof
 If you just want to install everything at once, and then come back to the list to explore the tools and their functionality, you can use the following command:
 
 ```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/MorganKryze/Easy-Env/main/src/install.sh)"
+```
+
+Or if you downloaded the repository, you can use the following command:
+
+```bash
 zsh src/install.sh
 ```
 
