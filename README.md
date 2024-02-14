@@ -193,11 +193,22 @@ Though DevToys is a wonderful tool for programmers, it has several features that
 brew install devtoys
 ```
 
-OnlySwitch is a All-in-One menu bar app, hide MacBook Pro's notch, dark mode, AirPods, Shortcuts. (Free | [Open source](https://github.com/jacklandrin/OnlySwitch))
+KeyboardCleanTool is a tool that allows you to disable your keyboard and trackpad to clean them. (Free | [Proprietary](https://folivora.ai/keyboardcleantool))
 
 ```bash
-# Easy customizable shortcuts
-brew install only-switch
+brew install keyboardcleantool
+```
+
+MediaMate is a tool that allows you to control your media keys on your keyboard. (Free for trial [but 7€ lifetime](https://wouter01.gumroad.com/l/mediamate) | [Proprietary](https://wouter01.github.io/MediaMate/))
+
+```bash
+brew install mediamate
+```
+
+Lunar is a tool that allows you to control the brightness of your external monitors. (Free with limited but enough features, else [27€ lifetime](https://lunar.fyi/) | [Proprietary](https://lunar.fyi/))
+
+```bash
+brew install lunar
 ```
 
 Rectangle is a window manager that allows you to manage your windows on your Desktop with your keyboard. (Free | [Open source](https://github.com/rxhanson/Rectangle))

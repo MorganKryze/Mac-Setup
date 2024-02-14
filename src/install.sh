@@ -12,7 +12,7 @@ echo "Upgrading Brew."
 brew upgrade
 
 echo "Installing Classic tools."
-brew install raycast maccy arc notion thunderbird pomatez dropzone cheatsheet imageoptim vlc drawio inkscape canva bitwarden lulu clamav onyx appcleaner monitorcontrol stats devtoys only-switch
+brew install raycast maccy arc notion thunderbird pomatez dropzone cheatsheet imageoptim vlc drawio inkscape canva bitwarden lulu clamav onyx appcleaner monitorcontrol stats devtoys keyboardcleantool mediamate lunar
 
 read -r is_developer"?Do you want to install developer tools? (y/n): " </dev/tty
 if [[ $is_developer == "y" || $is_developer == "Y" ]]; then
