@@ -283,6 +283,12 @@ export PATH="$PATH:/Users/your-user/.dotnet/tools"
 
 # Keys
 export OPENAI_API_KEY=your_openai_key
+
+# Rust tools
+. "$HOME/.cargo/env"
+
+# Z plugin
+. /opt/homebrew/etc/profile.d/z.sh
 ```
 
 > [!CAUTION]
@@ -290,7 +296,7 @@ export OPENAI_API_KEY=your_openai_key
 
 ### Oh My Zsh
 
-By default, the pre-configured shell on MacOS is zsh. Oh My Zsh is an open source, community-driven framework for managing your zsh configuration. It comes bundled with a ton of helpful functions, helpers, plugins, themes, and a few things that make you shout... "Oh My Zsh!". Install it with the following command:
+By default, the pre-configured shell on MacOS is zsh. Oh My Zsh is an open source, community-driven framework for managing your zsh configuration. It comes bundled with a ton of helpful functions, helpers, plugins, themes, and a few things that make you shout... "Oh My Zsh!". (Free | [Open source](https://ohmyz.sh/))
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -302,7 +308,7 @@ For the plugins, I use git, [zsh-autosuggestions](https://github.com/zsh-users/z
 
 ### neofetch
 
-neoFetch is a command-line system information tool. It displays information about your system next to an image, generally your OS logo, or any ASCII file of your choice. This is only cosmetic and informative.
+neoFetch is a command-line system information tool. It displays information about your system next to an image, generally your OS logo, or any ASCII file of your choice. This is only cosmetic and informative. (Free | [Open source](https://github.com/dylanaraps/neofetch))
 
 ```bash
 brew install neofetch
@@ -313,7 +319,7 @@ brew install neofetch
 
 ### lsd
 
-lsd is a modern ls command with a lot of options and visuals.
+lsd is a modern ls command with a lot of options and visuals. (Free | [Open source](https://github.com/lsd-rs/lsd))
 
 ```bash
 brew install lsd
@@ -322,25 +328,33 @@ brew install lsd
 > [!TIP]
 > You may use lsd with all of the built-in flags or define your own aliases in your `.zshrc` file to make your life easier.
 
+### z
+
+z is a tool that allows you to navigate through your directories with ease. It is a must-have tool for developpers. (Free | [Open source](https://github.com/rupa/z))
+
+```bash
+brew install z
+```
+
 ### yabai
 
 Yabai is a tiling window manager for macOS. It let you control your windows with your keyboard and gain a lot of time. To download and use it, I made this [repository](https://github.com/MorganKryze/Yabai-Setup).
 
 ### Git and versionning
 
-Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. (Free | [Open source](https://git-scm.com/))
 
 ```bash
 brew install git
 ```
 
-To visualize a control panel of your git workspace, you can use lazygit.
+To visualize a control panel of your git workspace, you can use lazygit. (Free | [Open source](https://github.com/jesseduffield/lazygit))
 
 ```bash
 brew install lazygit
 ```
 
-If you are using GitHub, you may want to use the GitHub CLI to manage your repositories and issues.
+If you are using GitHub, you may want to use the GitHub CLI to manage your repositories and issues. (Free | [Proprietary](https://cli.github.com/))
 
 ```bash
 brew install gh
@@ -360,7 +374,7 @@ gh auth login
 > [!TIP]
 > To make your developpment environment easier to manage, I made this [repository](https://github.com/MorganKryze/Easy-Env).
 
-Miniconda is a free minimal installer for conda. It is a small, bootstrap version of Anaconda that includes only conda, Python, the packages they depend on, and a small number of other useful packages, including pip, zlib and a few others. You may use it to create development environments for many language including Python, R, Ruby, Lua, Scala, Java, JavaScript, C/ C++, C#...
+Miniconda is a free minimal installer for conda. It is a small, bootstrap version of Anaconda that includes only conda, Python, the packages they depend on, and a small number of other useful packages, including pip, zlib and a few others. You may use it to create development environments for many language including Python, R, Ruby, Lua, Scala, Java, JavaScript, C/ C++, C#... (Free | [Proprietary](https://docs.conda.io/en/latest/miniconda.html)
 
 ```bash
 brew install miniconda
@@ -374,13 +388,13 @@ conda init "$(basename "${SHELL}")"
 
 ### Containers
 
-Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.
+Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels. (Free | [Open source](https://www.docker.com/))
 
 ```bash
 brew install docker
 ```
 
-To manage and visualize your containers, you can use lazydocker (same use as `lazygit`).
+To manage and visualize your containers, you can use lazydocker (same use as `lazygit`). (Free | [Open source](https://github.com/jesseduffield/lazydocker))
 
 ```bash
 brew lazydocker
