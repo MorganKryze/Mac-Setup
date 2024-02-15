@@ -402,23 +402,21 @@ brew lazydocker
 
 ## Dev apps
 
-Visual Studio Code is a source-code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code is a source-code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring. (Free | [Open source](https://github.com/microsoft/vscode))
 
 ```bash
 brew install visual-studio-code
 ```
 
-UTM is a virtual machine app that allows you to run any kind of VMs on your Mac. It is a great tool to test your apps on different OS or to use Windows on your Mac.
+UTM is a virtual machine app that allows you to run any kind of VMs on your Mac. It is a great tool to test your apps on different OS or to use Windows on your Mac. (Free | [Open source](https://github.com/utmapp/UTM))
 
 ```bash
-# For all kinds of VMs
 brew install utm
 ```
 
-UTM goes along with CrystalFetch, a tool that allows you to download the latest Windows images for UTM.
+UTM goes along with CrystalFetch, a tool that allows you to download the latest Windows images for UTM. (Free | [Open source](https://github.com/TuringSoftware/CrystalFetch))
 
 ```bash
-# Latest Windows images
 brew install crystalfetch
 ```
 
