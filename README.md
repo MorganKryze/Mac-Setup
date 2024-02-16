@@ -13,7 +13,7 @@ Homebrew is a package manager for macOS. It allows you to install and manage sof
 > [!TIP]
 > I highly recommend you to use Homebrew to install your apps instead of the app store or the packages by yourself. It is a lot easier and cleaner (sometimes safer).
 
-```bash
+```shell
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
