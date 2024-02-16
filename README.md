@@ -155,6 +155,12 @@ ClamAV is an antivirus that allows you to scan your files and folders for viruse
 brew install clamav
 ```
 
+Proton VPN is a VPN that allows you to protect your privacy and security. proton is for me very reliable and non intrusive, they let you use the Netherlands servers for free without displaying intrusive popups at each restart. (Free but has [paid plans](https://protonvpn.com/pricing)| [Proprietary](https://protonvpn.com/))
+
+```bash
+brew install protonvpn
+```
+
 > [!TIP]
 > You may use it as a service using `sudo brew services start clamav`.
 
