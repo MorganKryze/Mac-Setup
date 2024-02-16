@@ -11,8 +11,9 @@ brew update
 echo "Upgrading Brew."
 brew upgrade
 
-echo "Installing Classic tools."
-brew install raycast maccy arc notion thunderbird pomatez dropzone cheatsheet imageoptim vlc drawio inkscape canva bitwarden lulu clamav onyx appcleaner monitorcontrol stats devtoys keyboardcleantool mediamate lunar protonvpn
+echo "Installing Utility tools."
+brew install onyx appcleaner monitorcontrol stats devtoys keyboardcleantool mediamate lunar
+
 
 read -r is_developer"?Do you want to install developer tools? (y/n): " </dev/tty
 if [[ $is_developer == "y" || $is_developer == "Y" ]]; then
@@ -26,4 +27,4 @@ else
     brew install rectangle
 fi
 
-echo "All tools are installed! Do no hesitate to read the README.md file for more information about the apps."
+echo "Utility tools are installed! Do no hesitate to read the README.md file for more information about the apps."

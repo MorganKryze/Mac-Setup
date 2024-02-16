@@ -17,26 +17,24 @@ Homebrew is a package manager for macOS. It allows you to install and manage sof
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-## All in one
+## Classic tools
+
+> [!WARNING]
+> Each section has a script to install all the tools at once. You may use it if you want to install everything at once, but I recommend you to go through the list to understand what you are installing and how to use it.
+
+### Productivity
 
 If you just want to install everything at once, and then come back to the list to explore the tools and their functionality, you can use the following command:
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/MorganKryze/Mac-Setup/main/src/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/MorganKryze/Mac-Setup/main/src/productivity.sh)"
 ```
 
 Or if you downloaded the repository, you can use the following command:
 
 ```bash
-zsh src/install.sh
+zsh src/productivity.sh
 ```
-
-> [!WARNING]
-> This script does not include developper tools. You need to install them manually.
-
-## Classic tools
-
-### Productivity
 
 Raycast is an app that replaces the spotlight search on your Mac. It is a productivity tool that allows you to search for files, apps, and more. It also has a lot of plugins that you can use to customize it to your needs. (Free | [Open source](https://github.com/raycast))
 
@@ -91,6 +89,18 @@ brew install cheatsheet
 
 ### Photo & Video
 
+The script to install all the tools at once is the following:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/MorganKryze/Mac-Setup/main/src/photo_video.sh)"
+```
+
+Or if you downloaded the repository, you can use the following command:
+
+```bash
+zsh src/photo_video.sh
+```
+
 ImageOptim is a tool that allows you to compress images and remove metadata. (Free | [Open source](https://github.com/ImageOptim/ImageOptim))
 
 ```bash
@@ -131,6 +141,18 @@ defaults write com.apple.screencapture type jpg
 
 ### Security
 
+The script to install all the tools at once is the following:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/MorganKryze/Mac-Setup/main/src/security.sh)"
+```
+
+Or if you downloaded the repository, you can use the following command:
+
+```bash
+zsh src/security.sh
+```
+
 Bitwarden is a password manager that allows you to store and manage your passwords securely. (Free but has [paid plans](https://bitwarden.com/pricing/)| [Open source](https://github.com/bitwarden))
 
 ```bash
@@ -164,13 +186,25 @@ brew install protonvpn
 > [!TIP]
 > You may use it as a service using `sudo brew services start clamav`.
 
+### Utility
+
+The script to install all the tools at once is the following:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/MorganKryze/Mac-Setup/main/src/utility.sh)"
+```
+
+Or if you downloaded the repository, you can use the following command:
+
+```bash
+zsh src/utility.sh
+```
+
 Onyx is a maintenance tool that allows you to clean your system and optimize it. (Free | [Proprietary](https://www.titanium-software.fr/en/onyx.html))
 
 ```bash
 brew install onyx
 ```
-
-### Utilities
 
 AppCleaner is a tool that allows you to uninstall apps and their files by scanning your system and the app dependencies. (Free | [Proprietary](https://freemacsoft.net/appcleaner/))
 
@@ -226,10 +260,54 @@ Rectangle is a window manager that allows you to manage your windows on your Des
 brew install rectangle
 ```
 
+### Fun & Games
+
+The script to install all the tools at once is the following:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/MorganKryze/Mac-Setup/main/src/games.sh)"
+```
+
+Or if you downloaded the repository, you can use the following command:
+
+```bash
+zsh src/games.sh
+```
+
+Steam is a gaming platform that allows you to play games on your Mac. (Free | [Proprietary](https://store.steampowered.com/))
+
+```bash
+brew install steam
+```
+
+OpenEmu is a gaming platform that allows you to play retro games on your Mac. (Free | [Open source](https://github.com/OpenEmu/OpenEmu))
+
+```bash
+brew install openemu
+```
+
+Cmatrix is a tool that allows you to display the matrix on your terminal. (Free | [Open source](https://github.com/abishekvashok/cmatrix))
+
+```bash
+brew install cmatrix
+```
+
 ## Developper tools
 
-> [!IMPORTANT]
-> This part is only for developpers, do not mind otherwise.
+The script to install all the tools at once is the following:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/MorganKryze/Mac-Setup/main/src/devtools.sh)"
+```
+
+Or if you downloaded the repository, you can use the following command:
+
+```bash
+zsh src/devtools.sh
+```
+
+> [!WARNING]
+> You will need more than just executing this script to set up the tools. Please go though this section to understand how to use and configure the tools.
 
 ### Terminal configuration
 
@@ -342,6 +420,20 @@ z is a tool that allows you to navigate through your directories with ease. It i
 brew install z
 ```
 
+### statistics
+
+htop is a tool that allows you to monitor your system's performance. (Free | [Open source](https://htop.dev/))
+
+```bash
+brew install htop
+```
+
+btop displays a monitor of ressources usage on your terminal. (Free | [Open source](https://github.com/aristocratos/btop))
+
+```bash
+brew install btop
+```
+
 ### yabai
 
 Yabai is a tiling window manager for macOS. It let you control your windows with your keyboard and gain a lot of time. To download and use it, I made this [repository](https://github.com/MorganKryze/Yabai-Setup).
@@ -406,7 +498,7 @@ To manage and visualize your containers, you can use lazydocker (same use as `la
 brew lazydocker
 ```
 
-## Dev apps
+### Dev apps
 
 Visual Studio Code is a source-code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring. (Free | [Open source](https://github.com/microsoft/vscode))
 
@@ -426,9 +518,9 @@ UTM goes along with CrystalFetch, a tool that allows you to download the latest 
 brew install crystalfetch
 ```
 
-## VsCode extensions
+### VsCode extensions
 
-### General
+#### General
 
 - Better comments
 - Bracket pair colorizer
@@ -446,14 +538,14 @@ brew install crystalfetch
 - Reload
 - Todo Tree
 
-### GitHub
+#### GitHub
 
 - GitHub Actions
 - GitHub Copilot
 - GitHub Copilot Chat
 - Git History
 
-### Markdown
+#### Markdown
 
 - Markdown All in One
 - Markdown Preview Enhanced
@@ -463,11 +555,11 @@ brew install crystalfetch
 - Mermaid Markdown Syntax Highlighting
 - MyST-Markdown
 
-### API
+#### API
 
 - Thunder Client
 
-### .NET
+#### .NET
 
 - C#
 - C# Extensions
@@ -476,7 +568,7 @@ brew install crystalfetch
 - .NET Install Tool
 - Learn Authoring Pack
 
-### Python
+#### Python
 
 - Python
 - Black Formatter
@@ -487,7 +579,7 @@ brew install crystalfetch
 - Python Extension Pack
 - Python Indent
 
-### Dart/Flutter
+#### Dart/Flutter
 
 - Flutter
 - Dart Data Class Generator
