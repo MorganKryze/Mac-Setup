@@ -168,6 +168,24 @@ LuLu is a firewall that allows you to control the traffic of your apps and proce
 brew install lulu
 ```
 
+OverSight is a tool that allows you to monitor your webcam and microphone. (Free | [Open source](https://objective-see.com/products/oversight.html))
+
+```bash
+brew install oversight
+```
+
+KnockKnock and BlockBlock are complementary tools that allow you to monitor your system for persistent malware. (Free | [Open source](https://objective-see.com/products/knockknock.html))
+
+```bash
+brew install knockknock blockblock
+```
+
+Reikey is a tool that allows you to monitor your system for keyloggers. (Free | [Open source](https://objective-see.com/products/reikey.html))
+
+```bash
+brew install reikey
+```
+
 ClamAV is an antivirus that allows you to scan your files and folders for viruses. (Free | [Open source](https://www.clamav.net/))
 
 > [!CAUTION]
