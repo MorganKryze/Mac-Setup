@@ -60,12 +60,6 @@ Notion is a note-taking app that allows you to take notes, create to-do lists, a
 brew install notion
 ```
 
-Thunderbird is an email client that allows you to manage your emails. (Free but has [paid extension for microsoft 365 emails](https://addons.thunderbird.net/en-US/thunderbird/addon/owl-for-exchange/) | [Open source](https://www.thunderbird.net/))
-
-```bash
-brew install thunderbird
-```
-
 Pomatez is a pomodoro timer that allows you to manage your time and focus on your work. (Free | [Open source](https://github.com/zidoro/pomatez))
 
 ```bash
@@ -129,6 +123,38 @@ Canva is a graphic design platform that allows you to create and modify presenta
 
 ```bash
 brew install canva
+```
+
+### Messaging
+
+The script to install all the tools at once is the following:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/MorganKryze/Mac-Setup/main/src/messaging.sh)"
+```
+
+Or if you downloaded the repository, you can use the following command:
+
+```bash
+zsh src/messaging.sh
+```
+
+Thunderbird is an email client that allows you to manage your emails. (Free but has [paid extension for microsoft 365 emails](https://addons.thunderbird.net/en-US/thunderbird/addon/owl-for-exchange/) | [Open source](https://www.thunderbird.net/))
+
+```bash
+brew install thunderbird
+```
+
+Signal is a messaging app that allows you to send encrypted messages. (Free | [Open source](https://github.com/signalapp/Signal-Desktop))
+
+```bash
+brew install signal
+```
+
+Discord is a messaging app that allows you to communicate with your friends and colleagues in a server organized platform. (Free | [Proprietary](https://discord.com/))
+
+```bash
+brew install discord
 ```
 
 #### Bonus

@@ -1,4 +1,5 @@
 #!/bin/zsh
+#!/bin/zsh
 
 if ! command -v brew &>/dev/null; then
     echo "Brew is not installed. Installing Brew..."
@@ -12,6 +13,6 @@ echo "Upgrading Brew."
 brew upgrade
 
 echo "Installing Productivity tools."
-brew install raycast maccy arc notion pomatez dropzone cheatsheet
+brew install thunderbird signal discord
 
-echo "Productivity tools are installed! Do no hesitate to read the README.md file for more information about the apps."
+echo "Messaging tools are installed! Do no hesitate to read the README.md file for more information about the apps."
