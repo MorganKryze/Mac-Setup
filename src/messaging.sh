@@ -11,7 +11,7 @@ brew update
 echo "Upgrading Brew."
 brew upgrade
 
-echo "Installing Productivity tools."
+echo "Installing Messaging tools."
 brew install thunderbird signal discord
 
 echo "Messaging tools are installed! Do no hesitate to read the README.md file for more information about the apps."
